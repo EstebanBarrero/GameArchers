@@ -150,12 +150,11 @@ import javax.swing.UIManager;
 
         public StatsFrame(ActionListener listener, String firstStatisticString, String secondStatisticString,
                           String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
-            super("Monte Carlo Archery Game Simulator");
-            setSize(900, 450);
+            super("MonteCarlo Archery Game Simulator");
+            setSize(900, 450); //Establece el tamaño de la ventana en 900 píxeles de ancho y 450 píxeles de alto.
             setDefaultCloseOperation(EXIT_ON_CLOSE);
-            setLocationRelativeTo(null);
+            setLocationRelativeTo(null); //Centra la ventana en el medio de la pantalla.
             setResizable(false);
-            setIconImage(Toolkit.getDefaultToolkit().getImage("resources/images/target.png"));
             setLookAndFeel();
             initComponents(listener, firstStatisticString, secondStatisticString, thirdStatisticString,
                     fourthStatisticString, fifthStatisticString);
@@ -185,7 +184,7 @@ import javax.swing.UIManager;
 
             firstStatistic = new JLabel("Most Lucky Archers");
             firstStatistic.setHorizontalAlignment(SwingConstants.CENTER);
-            firstStatistic.setFont(new Font("Ebrima", Font.BOLD, 12));
+            firstStatistic.setFont(new Font("Arial", Font.BOLD, 12));
             firstStatistic.setBounds(10, 25, 411, 26);
             contentPane.add(firstStatistic);
 
@@ -207,7 +206,7 @@ import javax.swing.UIManager;
 
             secondtStatistic = new JLabel("Most Experienced Archers");
             secondtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
-            secondtStatistic.setFont(new Font("Ebrima", Font.BOLD, 12));
+            secondtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
             secondtStatistic.setBounds(453, 25, 421, 26);
             contentPane.add(secondtStatistic);
 
@@ -237,7 +236,7 @@ import javax.swing.UIManager;
 
             thirdtStatistic = new JLabel("Game Winning Team");
             thirdtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
-            thirdtStatistic.setFont(new Font("Ebrima", Font.BOLD, 12));
+            thirdtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
             thirdtStatistic.setBounds(20, 183, 411, 26);
             contentPane.add(thirdtStatistic);
 
@@ -250,7 +249,7 @@ import javax.swing.UIManager;
 
             fourthStatistic = new JLabel("Gender Winners");
             fourthStatistic.setHorizontalAlignment(SwingConstants.CENTER);
-            fourthStatistic.setFont(new Font("Ebrima", Font.BOLD, 12));
+            fourthStatistic.setFont(new Font("Arial", Font.BOLD, 12));
             fourthStatistic.setBounds(453, 185, 411, 26);
             contentPane.add(fourthStatistic);
 
@@ -271,7 +270,7 @@ import javax.swing.UIManager;
 
             fifthStatistic = new JLabel("Game Winning Gender");
             fifthStatistic.setHorizontalAlignment(SwingConstants.CENTER);
-            fifthStatistic.setFont(new Font("Ebrima", Font.BOLD, 12));
+            fifthStatistic.setFont(new Font("Arial", Font.BOLD, 12));
             fifthStatistic.setBounds(20, 253, 411, 26);
             contentPane.add(fifthStatistic);
 
@@ -283,7 +282,7 @@ import javax.swing.UIManager;
             contentPane.add(fifthStatisticTextArea);
 
             plotButton = new JButton("Archers Score vs 250 Games - Plot");
-            plotButton.setFont(new Font("Ebrima", Font.BOLD, 14));
+            plotButton.setFont(new Font("Arial", Font.BOLD, 14));
             plotButton.setFocusPainted(false);
             plotButton.addActionListener(listener);
             plotButton.setActionCommand("Plotting");

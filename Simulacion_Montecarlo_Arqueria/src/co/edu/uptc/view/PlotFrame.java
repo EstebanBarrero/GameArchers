@@ -42,7 +42,7 @@ public class PlotFrame extends JFrame {
 
     public PlotFrame(ArrayList<Arquero> arqueros) {
         super("Archers vs Game");
-        setSize(1800, 1000);
+        setSize(1800, 1000); //Tamaño de la grafica
         setDefaultCloseOperation(HIDE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -168,16 +168,20 @@ public class PlotFrame extends JFrame {
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
 
         // Set paint color for each series
-        renderer.setSeriesPaint(0, Color.RED);
-        renderer.setSeriesPaint(1, Color.BLUE);
-        renderer.setSeriesPaint(2, Color.CYAN);
-        renderer.setSeriesPaint(3, Color.GREEN);
-        renderer.setSeriesPaint(4, Color.LIGHT_GRAY);
-        renderer.setSeriesPaint(5, Color.MAGENTA);
-        renderer.setSeriesPaint(6, Color.ORANGE);
-        renderer.setSeriesPaint(7, Color.PINK);
-        renderer.setSeriesPaint(8, Color.WHITE);
-        renderer.setSeriesPaint(9, Color.YELLOW);
+        renderer.setSeriesPaint(0, Color.LIGHT_GRAY);
+        renderer.setSeriesPaint(1, Color.MAGENTA);
+        renderer.setSeriesPaint(2, Color.ORANGE);
+        renderer.setSeriesPaint(3, Color.RED);
+        renderer.setSeriesPaint(4, Color.BLUE);
+        renderer.setSeriesPaint(5, Color.GREEN);
+        renderer.setSeriesPaint(6, Color.LIGHT_GRAY);
+        renderer.setSeriesPaint(7, Color.MAGENTA);
+        renderer.setSeriesPaint(8, Color.YELLOW);
+        renderer.setSeriesPaint(9, Color.ORANGE);
+        renderer.setSeriesPaint(10, Color.PINK);
+        renderer.setSeriesPaint(11, Color.CYAN);
+        renderer.setSeriesPaint(12, Color.WHITE);
+
 
         // Set thickness for series (using strokes)
         renderer.setSeriesStroke(0, new BasicStroke(1.0f));
@@ -199,7 +203,7 @@ public class PlotFrame extends JFrame {
         plot.setRenderer(renderer);
 
         // Sets plot background
-        plot.setBackgroundPaint(Color.DARK_GRAY);
+        plot.setBackgroundPaint(Color.WHITE);
 
         // Sets paint color for the grid lines
         plot.setRangeGridlinesVisible(true);
