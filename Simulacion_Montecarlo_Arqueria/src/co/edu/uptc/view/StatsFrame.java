@@ -207,18 +207,18 @@ import javax.swing.UIManager;
             secondtStatistic = new JLabel("Most Experienced Archers");
             secondtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             secondtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
-            secondtStatistic.setBounds(453, 25, 421, 26);
+            secondtStatistic.setBounds(20, 183, 411, 26);
             contentPane.add(secondtStatistic);
 
             secondStatistictTextArea = new JTextArea(secondStatisticString);
             secondStatistictTextArea.setEditable(false);
             secondStatistictTextArea.setWrapStyleWord(true);
             secondStatistictTextArea.setLineWrap(true);
-            secondStatistictTextArea.setBounds(453, 63, 421, 94);
+            secondStatistictTextArea.setBounds(20, 221, 411, 21);
             contentPane.add(secondStatistictTextArea);
 
             secondStatisticScrollPane = new JScrollPane(secondStatistictTextArea);
-            secondStatisticScrollPane.setBounds(453, 62, 421, 95);
+            secondStatisticScrollPane.setBounds(20, 220, 411, 97);
             contentPane.add(secondStatisticScrollPane);
 
             secondSeparator = new JSeparator();
@@ -237,14 +237,14 @@ import javax.swing.UIManager;
             thirdtStatistic = new JLabel("Game Winning Team");
             thirdtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             thirdtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
-            thirdtStatistic.setBounds(20, 183, 411, 26);
+            thirdtStatistic.setBounds(453, 25, 421, 26);
             contentPane.add(thirdtStatistic);
 
             thirdStatisticTextArea = new JTextArea(thirdStatisticString);
             thirdStatisticTextArea.setEditable(false);
             thirdStatisticTextArea.setWrapStyleWord(true);
             thirdStatisticTextArea.setLineWrap(true);
-            thirdStatisticTextArea.setBounds(20, 220, 411, 22);
+            thirdStatisticTextArea.setBounds(453, 63, 421, 20);
             contentPane.add(thirdStatisticTextArea);
 
             fourthStatistic = new JLabel("Gender Winners");
@@ -271,17 +271,17 @@ import javax.swing.UIManager;
             fifthStatistic = new JLabel("Game Winning Gender");
             fifthStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             fifthStatistic.setFont(new Font("Arial", Font.BOLD, 12));
-            fifthStatistic.setBounds(20, 253, 411, 26);
+            fifthStatistic.setBounds(453, 90, 421, 26);
             contentPane.add(fifthStatistic);
 
             fifthStatisticTextArea = new JTextArea(fifthStatisticString);
             fifthStatisticTextArea.setEditable(false);
             fifthStatisticTextArea.setWrapStyleWord(true);
             fifthStatisticTextArea.setLineWrap(true);
-            fifthStatisticTextArea.setBounds(20, 288, 411, 22);
+            fifthStatisticTextArea.setBounds(453, 110, 421, 20);
             contentPane.add(fifthStatisticTextArea);
 
-            plotButton = new JButton("Archers Score vs 250 Games - Plot");
+            plotButton = new JButton("Archers Score vs 250 Games");
             plotButton.setFont(new Font("Arial", Font.BOLD, 14));
             plotButton.setFocusPainted(false);
             plotButton.addActionListener(listener);
