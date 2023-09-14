@@ -1,8 +1,7 @@
 package co.edu.uptc.view;
 
-    import java.awt.Font;
-import java.awt.Toolkit;
-import java.awt.event.ActionListener;
+    import java.awt.*;
+    import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -181,10 +180,12 @@ import javax.swing.UIManager;
 
             contentPane = new JPanel();
             contentPane.setLayout(null);
+            contentPane.setBackground(Color.gray);
 
             firstStatistic = new JLabel("Most Lucky Archers");
             firstStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             firstStatistic.setFont(new Font("Arial", Font.BOLD, 12));
+            firstStatistic.setForeground(Color.white);
             firstStatistic.setBounds(10, 25, 411, 26);
             contentPane.add(firstStatistic);
 
@@ -194,6 +195,8 @@ import javax.swing.UIManager;
             contentPane.add(firstSeparator);
 
             firstStatisticTextArea = new JTextArea(firstStatisticString);
+            firstStatisticTextArea.setForeground(Color.WHITE);
+            firstStatisticTextArea.setBackground(Color.GRAY);
             firstStatisticTextArea.setEditable(false);
             firstStatisticTextArea.setWrapStyleWord(true);
             firstStatisticTextArea.setLineWrap(true);
@@ -207,10 +210,13 @@ import javax.swing.UIManager;
             secondtStatistic = new JLabel("Most Experienced Archers");
             secondtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             secondtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
+            secondtStatistic.setForeground(Color.white);
             secondtStatistic.setBounds(20, 183, 411, 26);
             contentPane.add(secondtStatistic);
 
             secondStatistictTextArea = new JTextArea(secondStatisticString);
+            secondStatistictTextArea.setBackground(Color.GRAY);
+            secondStatistictTextArea.setForeground(Color.white);
             secondStatistictTextArea.setEditable(false);
             secondStatistictTextArea.setWrapStyleWord(true);
             secondStatistictTextArea.setLineWrap(true);
@@ -237,10 +243,13 @@ import javax.swing.UIManager;
             thirdtStatistic = new JLabel("Game Winning Team");
             thirdtStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             thirdtStatistic.setFont(new Font("Arial", Font.BOLD, 12));
+            thirdtStatistic.setForeground(Color.WHITE);
             thirdtStatistic.setBounds(453, 25, 421, 26);
             contentPane.add(thirdtStatistic);
 
             thirdStatisticTextArea = new JTextArea(thirdStatisticString);
+            thirdStatisticTextArea.setForeground(Color.WHITE);
+            thirdStatisticTextArea.setBackground(Color.GRAY);
             thirdStatisticTextArea.setEditable(false);
             thirdStatisticTextArea.setWrapStyleWord(true);
             thirdStatisticTextArea.setLineWrap(true);
@@ -250,10 +259,13 @@ import javax.swing.UIManager;
             fourthStatistic = new JLabel("Gender Winners");
             fourthStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             fourthStatistic.setFont(new Font("Arial", Font.BOLD, 12));
+            fourthStatistic.setForeground(Color.WHITE);
             fourthStatistic.setBounds(453, 185, 411, 26);
             contentPane.add(fourthStatistic);
 
             fourthStatisticTextArea = new JTextArea(fourthStatisticString);
+            fourthStatisticTextArea.setForeground(Color.WHITE);
+            fourthStatisticTextArea.setBackground(Color.GRAY);
             fourthStatisticTextArea.setEditable(false);
             fourthStatisticTextArea.setWrapStyleWord(true);
             fourthStatisticTextArea.setLineWrap(true);
@@ -271,10 +283,13 @@ import javax.swing.UIManager;
             fifthStatistic = new JLabel("Game Winning Gender");
             fifthStatistic.setHorizontalAlignment(SwingConstants.CENTER);
             fifthStatistic.setFont(new Font("Arial", Font.BOLD, 12));
+            fifthStatistic.setForeground(Color.WHITE);
             fifthStatistic.setBounds(453, 90, 421, 26);
             contentPane.add(fifthStatistic);
 
             fifthStatisticTextArea = new JTextArea(fifthStatisticString);
+            fifthStatisticTextArea.setForeground(Color.WHITE);
+            fifthStatisticTextArea.setBackground(Color.GRAY);
             fifthStatisticTextArea.setEditable(false);
             fifthStatisticTextArea.setWrapStyleWord(true);
             fifthStatisticTextArea.setLineWrap(true);
