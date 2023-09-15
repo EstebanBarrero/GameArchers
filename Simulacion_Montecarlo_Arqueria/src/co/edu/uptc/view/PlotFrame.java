@@ -2,7 +2,6 @@ package co.edu.uptc.view;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
-import java.awt.Toolkit;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
@@ -41,12 +40,11 @@ public class PlotFrame extends JFrame {
 
 
     public PlotFrame(ArrayList<Arquero> arqueros) {
-        super("Archers vs Game");
+        super("Graphic");
         setSize(1800, 1000); //Tamaño de la grafica
         setDefaultCloseOperation(HIDE_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
-        setIconImage(Toolkit.getDefaultToolkit().getImage("resources/images/plot.png"));
         setLookAndFeel();
         initComponents(arqueros);
         setVisible(true);
@@ -70,17 +68,21 @@ public class PlotFrame extends JFrame {
 
         XYDataset dataset = createDataset(arqueros);
 
-        JFreeChart chart = ChartFactory.createXYLineChart("Archer Total Points vs 250 Games", "Game", "Points",
+        JFreeChart chart = ChartFactory.createXYLineChart("Archer Points vs 250 Games", "Game", "Points",
                 dataset);
 
-        customizeChart(chart);
+        personalizarGrafico(chart);
 
         contentPane = new ChartPanel(chart);
 
         setContentPane(contentPane);
     }
 
-
+    /**
+     * El propósito principal de este método es estructurar los datos de los arqueros en una forma que pueda ser
+     * utilizada para crear gráficos XY, como gráficos de dispersión o líneas, en un entorno de visualización,
+     * como una gráfica.
+     */
     private XYDataset createDataset(ArrayList<Arquero> arqueros) {
 
         XYSeriesCollection dataset = new XYSeriesCollection();
@@ -162,8 +164,11 @@ public class PlotFrame extends JFrame {
     }
 
 
-
-    private void customizeChart(JFreeChart chart) {
+    /**
+     * Este método, llamado customizeChart, personaliza la apariencia de un gráfico de líneas
+     * bidimensional (XYPlot) creado con la biblioteca JFreeChart en Java.
+     */
+    private void personalizarGrafico(JFreeChart chart) {
         XYPlot plot = chart.getXYPlot();
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
 

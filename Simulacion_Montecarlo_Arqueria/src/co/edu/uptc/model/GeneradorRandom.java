@@ -3,14 +3,14 @@ import java.security.SecureRandom;
 
 //usa metodos cuadrados medios
 
-public class GeneratorPseudoRandomNumber {
+public class GeneradorRandom {
 
 
     private long seed;
     private int min;
     private int max;
 
-    public GeneratorPseudoRandomNumber(int min, int max) {
+    public GeneradorRandom(int min, int max) {
         seed = new SecureRandom().nextLong();
         this.min = min;
         this.max = max;

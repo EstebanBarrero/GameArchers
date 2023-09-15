@@ -20,10 +20,7 @@ public class Presenter implements ActionListener {
     private Prueba prueba;
 
     /**
-     *
      * Constructor method.
-     *
-     * @param games.
      */
 
     public Presenter(int games) {

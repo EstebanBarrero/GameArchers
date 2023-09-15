@@ -141,15 +141,17 @@ import javax.swing.UIManager;
         private JTextArea fifthStatisticTextArea;
 
         /**
-         * Plotting button.
+         * Botón para generar la grafica.
          */
 
         private JButton plotButton;
 
-
+        /**
+         * constructor
+         */
         public StatsFrame(ActionListener listener, String firstStatisticString, String secondStatisticString,
                           String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
-            super("MonteCarlo Archery Game Simulator");
+            super("MonteCarlo Game Simulator");
             setSize(900, 450); //Establece el tamaño de la ventana en 900 píxeles de ancho y 450 píxeles de alto.
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             setLocationRelativeTo(null); //Centra la ventana en el medio de la pantalla.
@@ -174,7 +176,15 @@ import javax.swing.UIManager;
         }
 
 
-
+        /**
+         *
+         * @param listener Graph button cartoner
+         * @param firstStatisticString The first sale of the interface is located, where the luckiest Archers can be found.
+         * @param secondStatisticString There is the first sale of the interface, where the most experienced archers are located.
+         * @param thirdStatisticString The first sale of the interface, where the winning team is located, is located
+         * @param fourthStatisticString You will find the first sale of the interface, where you will find the winning Generos
+         * @param fifthStatisticString You will find the first sale of the interface, where you will find the winner Genero
+         */
         private void initComponents(ActionListener listener, String firstStatisticString, String secondStatisticString,
                                     String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
 

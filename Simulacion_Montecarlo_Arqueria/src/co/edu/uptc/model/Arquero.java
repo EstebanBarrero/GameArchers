@@ -14,12 +14,12 @@ public class Arquero {
         private int ganadorSorteo;
         private int ganadorSorteoConsecutivo;
         private int contadorSuerte;
-        private GeneratorPseudoRandomNumber generator;
+        private GeneradorRandom generator;
 
 
         public Arquero(int codigo) {
             this.codigo = codigo;
-            generator = new GeneratorPseudoRandomNumber(0, 1);
+            generator = new GeneradorRandom(0, 1);
             genero = generateGenero();
             resistenciaInicial = generateResistencia();
             resistenciaOriginal=resistenciaInicial;
