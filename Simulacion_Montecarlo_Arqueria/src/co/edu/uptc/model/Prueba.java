@@ -7,13 +7,9 @@ import java.util.Arrays;
 
 
 public class Prueba {
-    private int countGanadorRondaH;
-    private int countGanadorRondaM;
-    private int totalEquipo1;
-    private int totalEquipo2;
+    private int countGanadorRondaH, countGanadorRondaM, totalEquipo1, totalEquipo2;
     private ArrayList<Juego> listJuegos;
-    private Equipo equipo1;
-    private Equipo equipo2;
+    private Equipo equipo1, equipo2;
 
     public Prueba(int games) {
         listJuegos = new ArrayList<Juego>();

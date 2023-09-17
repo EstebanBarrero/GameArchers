@@ -5,9 +5,7 @@ import java.util.ArrayList;
 public class Equipo {
 
     private ArrayList<Arquero> arqueros;
-    private int puntaje;
-    private int codigo;
-    private int rondasGanadas;
+    private int puntaje, codigo, rondasGanadas;
 
     public Equipo(ArrayList<Arquero> arqueros, int code) {
         this.arqueros = arqueros;

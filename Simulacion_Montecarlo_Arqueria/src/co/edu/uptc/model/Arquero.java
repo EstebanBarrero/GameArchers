@@ -1,19 +1,10 @@
 package co.edu.uptc.model;
 
 public class Arquero {
-        private int codigo;
+        private int codigo, resistenciaInicial, resistenciaOriginal, resistencia, experiencia;
         private Genero genero;
-        private int resistenciaInicial;
-        private int resistenciaOriginal;
-        private int resistencia;
-        private int experiencia;
         private double suerte;
-        private int puntos;
-        private int puntosRonda;
-        private int rondasGanadas;
-        private int ganadorSorteo;
-        private int ganadorSorteoConsecutivo;
-        private int contadorSuerte;
+        private int puntos, puntosRonda, rondasGanadas, ganadorSorteo, ganadorSorteoConsecutivo, contadorSuerte;
         private GeneradorRandom generator;
 
 

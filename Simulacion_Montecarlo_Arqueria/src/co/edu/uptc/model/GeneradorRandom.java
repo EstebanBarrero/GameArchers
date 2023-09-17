@@ -7,8 +7,7 @@ public class GeneradorRandom {
 
 
     private long seed;
-    private int min;
-    private int max;
+    private int min, max;
 
     public GeneradorRandom(int min, int max) {
         seed = new SecureRandom().nextLong();
