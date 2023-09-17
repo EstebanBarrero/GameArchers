@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07bf3752-95f5-45f7-9cb9-c85bd8cc3488" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jcommon_1_0_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfreechart_1_0_19.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulacion_Montecarlo_Arqueria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Simulacion_Montecarlo_Arqueria.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Equipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Generator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Juego.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Juego.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Prueba.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Prueba.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Tiro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/model/Tiro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/presenter/Presenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/presenter/Presenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/run/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/run/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/view/PlotFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/view/PlotFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/view/StatsFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Simulacion_Montecarlo_Arqueria/co/edu/uptc/view/StatsFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/model/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/model/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/model/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/model/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/model/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/model/Prueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/model/Prueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/model/Tiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/model/Tiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/run/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/PlotFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/PlotFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/co/edu/uptc/view/StatsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/co/edu/uptc/view/StatsFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +19,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2VR2bfUrVKU202qHTyxVXQvGr2L" />
   <component name="ProjectViewState">

@@ -39,6 +39,10 @@ public class PlotFrame extends JFrame {
     private JPanel contentPane;
 
 
+    /**
+     * Constructor de la clase PlotFrame para mostrar un gráfico.
+     * @param arqueros ArrayList de objetos Arquero para representar en el gráfico.
+     */
     public PlotFrame(ArrayList<Arquero> arqueros) {
         super("Graphic");
         setSize(1800, 1000); //Tamaño de la grafica
@@ -50,11 +54,10 @@ public class PlotFrame extends JFrame {
         setVisible(true);
     }
 
-    /**
-     *
-     * setLookAndFeel void method.
-     */
 
+    /**
+     * Configura el aspecto visual de la aplicación para que coincida con el aspecto del sistema operativo.
+     */
     private void setLookAndFeel() {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -63,7 +66,10 @@ public class PlotFrame extends JFrame {
         }
     }
 
-
+    /**
+     * Inicializa los componentes necesarios para crear un gráfico XY y lo muestra en la ventana.
+     * @param arqueros La lista de arqueros utilizada para crear el gráfico.
+     */
     private void initComponents(ArrayList<Arquero> arqueros) {
 
         XYDataset dataset = createDataset(arqueros);
@@ -165,14 +171,14 @@ public class PlotFrame extends JFrame {
 
 
     /**
-     * Este método, llamado customizeChart, personaliza la apariencia de un gráfico de líneas
-     * bidimensional (XYPlot) creado con la biblioteca JFreeChart en Java.
+     * Personaliza la apariencia y el estilo del gráfico XY.
+     * @param chart El gráfico XY que se va a personalizar.
      */
     private void personalizarGrafico(JFreeChart chart) {
         XYPlot plot = chart.getXYPlot();
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
 
-        // Set paint color for each series
+        // Define colores para cada serie en el gráfico (en este caso, se definen colores para 13 series).
         renderer.setSeriesPaint(0, Color.LIGHT_GRAY);
         renderer.setSeriesPaint(1, Color.MAGENTA);
         renderer.setSeriesPaint(2, Color.ORANGE);
@@ -188,7 +194,7 @@ public class PlotFrame extends JFrame {
         renderer.setSeriesPaint(12, Color.WHITE);
 
 
-        // Set thickness for series (using strokes)
+        // Define el grosor de las líneas para cada serie.
         renderer.setSeriesStroke(0, new BasicStroke(1.0f));
         renderer.setSeriesStroke(1, new BasicStroke(1.0f));
         renderer.setSeriesStroke(2, new BasicStroke(1.0f));
@@ -200,17 +206,17 @@ public class PlotFrame extends JFrame {
         renderer.setSeriesStroke(8, new BasicStroke(1.0f));
         renderer.setSeriesStroke(9, new BasicStroke(1.0f));
 
-        // Hides shapes filled
+        // Oculta las formas llenas en el gráfico.
         renderer.setBaseShapesFilled(false);
+        // Oculta los contornos alrededor de las formas.
         renderer.setDrawOutlines(false);
-
-        // Sets renderer for lines
+        // Asigna el renderer personalizado al plot del gráfico.
         plot.setRenderer(renderer);
 
-        // Sets plot background
+        // Establece el color de fondo del plot.
         plot.setBackgroundPaint(Color.WHITE);
 
-        // Sets paint color for the grid lines
+        // Configura la apariencia de las líneas de la cuadrícula en el gráfico.
         plot.setRangeGridlinesVisible(true);
         plot.setRangeGridlinePaint(Color.BLACK);
 

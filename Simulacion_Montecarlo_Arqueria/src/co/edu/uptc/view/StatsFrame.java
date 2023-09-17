@@ -1,8 +1,7 @@
 package co.edu.uptc.view;
 
-    import java.awt.*;
-    import java.awt.event.ActionListener;
-
+import java.awt.*;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -147,7 +146,13 @@ import javax.swing.UIManager;
         private JButton plotButton;
 
         /**
-         * constructor.
+         * Constructor de la clase StatsFrame para crear una ventana de estadísticas.
+         * @param listener ActionListener para gestionar eventos de la interfaz.
+         * @param firstStatisticString  Texto para la primera estadística que es Arqueros con más suerte.
+         * @param secondStatisticString Texto para la segunda estadística que es Arqueros más experimentados.
+         * @param thirdStatisticString  Texto para la tercera estadística que es el Equipo ganador.
+         * @param fourthStatisticString Texto para la cuarta estadística que son los Ganadores por género.
+         * @param fifthStatisticString  Texto para la quinta estadística que es el Género ganador.
          */
         public StatsFrame(ActionListener listener, String firstStatisticString, String secondStatisticString,
                           String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
@@ -163,10 +168,9 @@ import javax.swing.UIManager;
         }
 
         /**
-         *
-         * setLookAndFeel void method.
+         * Configura el aspecto y la sensación (look and feel) de la ventana de la aplicación
+         * utilizando el aspecto del sistema operativo.
          */
-
         private void setLookAndFeel() {
             try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -175,15 +179,14 @@ import javax.swing.UIManager;
             }
         }
 
-
         /**
-         *
-         * @param listener Graph button cartoner
-         * @param firstStatisticString The first sale of the interface is located, where the luckiest Archers can be found.
-         * @param secondStatisticString There is the first sale of the interface, where the most experienced archers are located.
-         * @param thirdStatisticString The first sale of the interface, where the winning team is located, is located
-         * @param fourthStatisticString You will find the first sale of the interface, where you will find the winning Generos
-         * @param fifthStatisticString You will find the first sale of the interface, where you will find the winner Genero
+         * Inicializa y configura los componentes de la interfaz de usuario.
+         * @param listener El ActionListener para manejar eventos.
+         * @param firstStatisticString Cadena de texto para la primera estadística que es Arqueros con más suerte
+         * @param secondStatisticString Cadena de texto para la segunda estadística que es Arqueros más experimentados.
+         * @param thirdStatisticString Cadena de texto para la tercera estadística que es el Equipo ganador.
+         * @param fourthStatisticString Cadena de texto para la cuarta estadística que son los Ganadores por género
+         * @param fifthStatisticString Cadena de texto para la quinta estadística que es el Género ganador.
          */
         private void initComponents(ActionListener listener, String firstStatisticString, String secondStatisticString,
                                     String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
