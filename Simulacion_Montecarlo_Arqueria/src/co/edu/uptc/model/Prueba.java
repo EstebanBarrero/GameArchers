@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-
+/**
+ *
+ */
 public class Prueba {
     private int countGanadorRondaH, countGanadorRondaM, totalEquipo1, totalEquipo2;
     private ArrayList<Juego> listJuegos;
@@ -30,7 +32,6 @@ public class Prueba {
                 for (Equipo equipo : listJuegos.get(i).getEquipos())
                     for (Arquero arquero : equipo.getArquero()) {
                         arquero.tiro();
-                        System.out.println(arquero.getSuerte());
                     }
                 juegoActual.sorteoTiro();
                 if (j >= 2) {
@@ -60,7 +61,7 @@ public class Prueba {
             totalEquipo2 += juego.scoreEquipo(1);
         }
     }
-    public ArrayList<Arquero> getArchersPorJuego() {
+    public ArrayList<Arquero> getArqueroPorJuego() {
         ArrayList<Arquero> arqueros = new ArrayList<Arquero>();
         for (Juego juego : listJuegos)
             for (Arquero arquero : juego.getArqueros())

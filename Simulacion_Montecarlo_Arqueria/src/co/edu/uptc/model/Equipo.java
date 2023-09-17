@@ -13,11 +13,6 @@ public class Equipo {
         puntaje = 0;
         rondasGanadas = 0;
     }
-
-    public void resetData(){
-        puntaje =0;
-        rondasGanadas =0;
-    }
     public void darTiroArqueroSuerte(int round) {
         Arquero arquero = getSuerteArquero();
         puntaje += arquero.generoDeTiro();

@@ -38,9 +38,8 @@ public class Presenter implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         switch (e.getActionCommand()) {
             case "Plotting":
-                new PlotFrame(prueba.getArchersPorJuego());
+                new PlotFrame(prueba.getArqueroPorJuego());
                 break;
-
             default:
                 break;
         }

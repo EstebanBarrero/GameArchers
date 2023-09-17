@@ -306,7 +306,7 @@ import javax.swing.UIManager;
             fifthStatisticTextArea.setBounds(453, 110, 421, 20);
             contentPane.add(fifthStatisticTextArea);
 
-            plotButton = new JButton("Archers Score vs 250 Games");
+            plotButton = new JButton("Archers Score vs Games");
             plotButton.setFont(new Font("Arial", Font.BOLD, 14));
             plotButton.setFocusPainted(false);
             plotButton.addActionListener(listener);
