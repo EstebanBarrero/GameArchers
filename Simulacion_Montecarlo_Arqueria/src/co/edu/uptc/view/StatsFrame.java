@@ -147,7 +147,7 @@ import javax.swing.UIManager;
         private JButton plotButton;
 
         /**
-         * constructor
+         * constructor.
          */
         public StatsFrame(ActionListener listener, String firstStatisticString, String secondStatisticString,
                           String thirdStatisticString, String fourthStatisticString, String fifthStatisticString) {
