@@ -68,7 +68,7 @@ public class PlotFrame extends JFrame {
 
         XYDataset dataset = createDataset(arqueros);
 
-        JFreeChart chart = ChartFactory.createXYLineChart("Archer Points vs 250 Games", "Game", "Points",
+        JFreeChart chart = ChartFactory.createXYLineChart("Archer Points vs Games", "Game", "Points",
                 dataset);
 
         personalizarGrafico(chart);
@@ -100,7 +100,7 @@ public class PlotFrame extends JFrame {
 
         Arquero auxArquero = null;
 
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 20000; i++) {
 
             auxArquero = arqueros.get(i);
 

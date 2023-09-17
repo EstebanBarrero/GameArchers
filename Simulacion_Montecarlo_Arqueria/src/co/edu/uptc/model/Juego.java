@@ -17,12 +17,28 @@ public class Juego {
         equipos[1] = equipo2;
         rondas = 1;
     }
+    public int scoreEquipo(int position) {
+        return equipos[position].getPuntaje();
+    }
+
+    public Equipo[] getEquipos() {
+        return equipos;
+    }
+
+    public void incrementaRondas() {
+        rondas++;
+    }
     public ArrayList<Arquero> getArqueros() {
         ArrayList<Arquero> arqueros = new ArrayList<Arquero>();
         for (Equipo equipo : equipos)
             for (Arquero arquero : equipo.getArquero())
                 arqueros.add(arquero);
         return arqueros;
+    }
+    public void arqueroGanador() {
+        Arquero ganadorRonda = desempateRonda(equipos[0].mayorPuntajeArquero(),
+                equipos[1].mayorPuntajeArquero());
+        ganadorRonda.ganarExperiencia();
     }
     private Arquero desempateRonda(Arquero a, Arquero b) {
         Arquero winner = null;
@@ -40,11 +56,7 @@ public class Juego {
         for (Equipo equipo : equipos)
             equipo.darTiroArqueroSuerte(rondas);
     }
-    public void arqueroGanador() {
-        Arquero ganadorRonda = desempateRonda(equipos[0].mayorPuntajeArquero(),
-                equipos[1].mayorPuntajeArquero());
-        ganadorRonda.ganarExperiencia();
-    }
+
     private Arquero ganadorIndividual() {
         Arquero a = equipos[0].mayorGanadorRonda();
         Arquero b = equipos[1].mayorGanadorRonda();
@@ -74,24 +86,10 @@ public class Juego {
                 : (countLuckArqueroTeam1.getContadorSuerte() > countLuckArqueroTeam2.getContadorSuerte()) ? countLuckArqueroTeam1
                 : countLuckArqueroTeam2;
     }
-
-    public int scoreEquipo(int position) {
-        return equipos[position].getPuntaje();
-    }
-
-    public Equipo[] getEquipos() {
-        return equipos;
-    }
-
-    public void incrementaRondas() {
-        rondas++;
-    }
     public void TiroExtraTresTiros() {
         equipos[0].tiroExtraConsecutivos();
         equipos[1].tiroExtraConsecutivos();
     }
-
-
     public void regainRoundPoints() {
         for (Equipo equipo : equipos)
             equipo.restablecerRoundPoints();
